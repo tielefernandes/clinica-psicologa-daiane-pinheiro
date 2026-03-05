@@ -94,39 +94,6 @@ Hospedável em qualquer servidor estático:
 - **Vercel** — Deploy automático
 - **Servidor próprio** — Qualquer servidor HTTP
 
-## ⚙️ Customização
-
-### Alterar Nome/Título
-Em `index.html`:
-```html
-<title>Clínica Psicologa • Daiane Pinheiro</title>
-<div class="logo">Dra. Daiane Pinheiro</div>
-```
-
-### Alterar Número WhatsApp
-Em `index.html`, procure por:
-```
-wa.me/5511979812911
-```
-Substitua pelo número correto (sem caracteres especiais):
-```
-wa.me/55SEU_DDD_SEU_NUMERO
-```
-
-### Alterar Imagens
-Substitua em `images/`:
-- `oficial2.jpg` → imagem hero (recomendado: 1200x1200px+)
-- `office-psi.jpg` → imagem sobre (recomendado: 500x500px+)
-
-### Alterar Cores
-Em `style.css`, procure por valores de cores:
-```css
-/* Cor primária */
-color: #5c5c5c;
-
-/* Fundo hero */
-background: linear-gradient(135deg, #f5f2ee 0%, #fff 100%);
-```
 
 ## 🚀 Como Funciona
 
@@ -152,6 +119,41 @@ a[href^="#"].addEventListener('click', (e) => {
 // Ao scroll > 50px, muda background
 // Em mobile ≤900px, nav fica oculta e botão "Agendar" fica visível
 ```
+
+## 🎨 Paleta de Cores — Clínica Psicóloga Daiane Pinheiro
+
+O site utiliza uma paleta **profissional, acolhedora e minimalista** com as seguintes cores principais:
+
+### 🟢 Cores Primárias
+* **Verde Terapêutico:** `#3f6b5b` (Tons de botões, ícones, textos de destaque)
+* **Branco:** `#ffffff` (Fundo das seções e cards)
+
+### ☁️ Cores de Fundo (Neutras)
+| Nome | Hex | Aplicação |
+| :--- | :--- | :--- |
+| **Bege Claro** | `#f4f1ed` | Fundo principal do body |
+| **Bege Suave** | `#f6f2ee` | Seções de serviços e ajuda |
+| **Bege Quente** | `#efe8e1` | Seções de abordagem e contato |
+| **Bege Muito Claro** | `#f8f6f3` | Seção de depoimentos |
+
+### 🖋️ Cores de Texto
+* **Preto Suave:** `#2b2b2b` (Texto geral)
+* **Cinza Médio:** `#5c5c5c` (Texto secundário)
+* **Cinza Claro:** `#444444` (Depoimentos)
+* **Cinza Border:** `#dddddd` (Inputs do formulário)
+
+### ✨ Cores de Destaque
+* **Verde Pastel:** `#dfe8e4` (Fundo dos ícones de contato)
+* **Amarelo Dourado:** `#f5b301` (Estrelas dos depoimentos)
+
+---
+
+### 💡 Resumo da Paleta
+A paleta reflete profissionalismo e acolhimento com:
+* ✅ **Verde muted** como cor de identidade (marca a psicologia/bem-estar).
+* ✅ **Tons bege/marrom** quentes para criar ambiente aconchegante.
+* ✅ **Muito branco** e espaço negativo para limpeza visual.
+* ✅ **Detalhes dourados** que agregam sofisticação.
 
 ## ✅ Checklist de Desenvolvimento
 
@@ -192,3 +194,4 @@ Projeto desenvolvido para uso profissional exclusivo da Dra. Daiane Pinheiro.
 ---
 
 © 2026 — Developed by Tiele Fernandes 
+

@@ -52,7 +52,7 @@ if (heroPrimary && contatoForm) {
 
 // smooth scroll para links de âncora no nav (e ativar reveal quando necessário)
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     const hash = this.getAttribute('href');
     if (!hash || hash === '#') return; // deixa links vazios normais
     const target = document.querySelector(hash);
@@ -67,3 +67,38 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
+
+
+const form = document.getElementById("form-contato");
+const feedback = document.getElementById("form-feedback");
+
+form.addEventListener("submit", function (e) {
+
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value.trim();
+  const mensagem = document.getElementById("mensagem").value.trim();
+
+  if (!nome || !mensagem) {
+
+    feedback.textContent = "Por favor, preencha todos os campos.";
+    feedback.className = "error";
+
+    return;
+  }
+
+  feedback.textContent = "Mensagem preparada! Redirecionando para o WhatsApp...";
+  feedback.className = "success";
+
+  const telefone = "5511979812911";
+
+  const texto = `Olá, meu nome é ${nome}.%0A%0A${mensagem}%0A%0AGostaria de agendar uma consulta.`;
+
+  const url = `https://wa.me/${telefone}?text=${texto}`;
+
+  setTimeout(() => {
+    window.open(url, "_blank");
+  }, 1200);
+
+});
+
